@@ -1,5 +1,3 @@
-
-
 # 👨‍💻 Author
 
 **Aviral Goyal**
