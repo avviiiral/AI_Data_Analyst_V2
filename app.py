@@ -7,7 +7,7 @@ from ui.pages.analytics import render_analytics
 from ui.pages.dashboard import render_dashboard
 from ui.pages.copilot import render_copilot
 from ui.pages.reports import render_reports
-
+from ui.pages.agent import render_agent
 
 # =====================================================
 # PAGE CONFIG
@@ -39,17 +39,13 @@ page = st.sidebar.radio(
     "Select Page",
 
     [
-
         "🏠 Overview",
-
         "📊 Analytics",
-
         "📈 Dashboard",
-
         "🤖 AI Copilot",
-
-        "📄 Reports"
-
+        "🧹 Data Preparation",
+        "📄 Reports",
+        "🧠 AI Agent"
     ]
 
 )
@@ -115,3 +111,7 @@ elif page == "🤖 AI Copilot":
 elif page == "📄 Reports":
 
     render_reports(df)
+    
+elif page == "🧠 AI Agent":
+    
+    render_agent(df)
