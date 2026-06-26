@@ -212,6 +212,32 @@ streamlit run app.py
 - Multi-file Analysis
 - Deployment on Railway
 
+## 🚀 Version History
+
+### v2.2.0 (Current)
+
+- ✅ Modular UI Architecture
+- ✅ AI Copilot
+- ✅ Smart Dashboard
+- ✅ Executive Reports
+- ✅ Data Preparation Studio
+- ✅ Cleaning Pipeline
+- ✅ Session Management
+- ✅ Forecasting
+- ✅ Driver Analysis
+- ✅ Root Cause Analysis
+- ✅ Anomaly Detection
+
+### Upcoming v3.0
+
+- AI Data Analyst Agent
+- Planner
+- Tool Router
+- Multi-step Reasoning
+- Memory
+- Response Builder
+- Optional LLM Integration
+
 ---
 
 # 👨‍💻 Author
