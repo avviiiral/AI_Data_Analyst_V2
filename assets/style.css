@@ -1,0 +1,356 @@
+/* ==========================================
+   IMPORT FONT
+========================================== */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+
+html,
+body,
+[class*="css"] {
+  font-family: "Inter", sans-serif;
+}
+
+/* ==========================================
+   MAIN APP
+========================================== */
+
+.stApp {
+  background: linear-gradient(180deg, #0b1120 0%, #111827 100%);
+  color: #f8fafc;
+}
+
+/* ==========================================
+   HERO SECTION
+========================================== */
+
+.hero {
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  padding: 40px;
+  border-radius: 22px;
+  margin-bottom: 30px;
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.35);
+}
+
+.hero h1 {
+  color: white;
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.hero p {
+  color: #dbeafe;
+  font-size: 18px;
+}
+
+/* ==========================================
+   SIDEBAR
+========================================== */
+
+section[data-testid="stSidebar"] {
+  background: #131722;
+
+  border-right: 1px solid #2b3445;
+}
+
+section[data-testid="stSidebar"] h1,
+section[data-testid="stSidebar"] h2,
+section[data-testid="stSidebar"] h3 {
+  color: white;
+}
+
+section[data-testid="stSidebar"] {
+  padding-top: 20px;
+}
+
+/* ==========================================
+   BUTTONS
+========================================== */
+
+.stButton > button {
+  width: 100%;
+
+  border: none;
+
+  border-radius: 12px;
+
+  padding: 12px;
+
+  background: linear-gradient(90deg, #2563eb, #7c3aed);
+
+  color: white;
+
+  font-weight: 600;
+
+  transition: 0.3s;
+}
+
+.stButton > button:hover {
+  transform: translateY(-2px);
+
+  box-shadow: 0px 10px 30px rgba(37, 99, 235, 0.45);
+}
+
+/* ==========================================
+   FILE UPLOADER
+========================================== */
+
+[data-testid="stFileUploader"] {
+  background: #1a2233;
+
+  border-radius: 18px;
+
+  padding: 25px;
+
+  border: 1px dashed #3b82f6;
+
+  transition: 0.3s;
+}
+
+[data-testid="stFileUploader"]:hover {
+  border-color: #8b5cf6;
+
+  box-shadow: 0px 0px 30px rgba(124, 58, 237, 0.25);
+}
+
+/* ==========================================
+   METRICS
+========================================== */
+
+[data-testid="metric-container"] {
+  background: #161d2d;
+
+  border-radius: 18px;
+
+  padding: 20px;
+
+  border: 1px solid #273449;
+
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+
+  transition: 0.3s;
+}
+
+[data-testid="metric-container"]:hover {
+  transform: translateY(-4px);
+
+  border-color: #3b82f6;
+}
+
+[data-testid="metric-container"] label {
+  color: #94a3b8;
+}
+
+[data-testid="metric-container"] [data-testid="stMetricValue"] {
+  color: white;
+
+  font-size: 32px;
+
+  font-weight: 700;
+}
+
+/* ==========================================
+   TABS
+========================================== */
+
+button[data-baseweb="tab"] {
+  background: #1b2434;
+
+  color: #cbd5e1;
+
+  border-radius: 12px;
+
+  margin-right: 8px;
+
+  padding: 12px 18px;
+
+  font-weight: 600;
+
+  transition: 0.3s;
+}
+
+button[data-baseweb="tab"]:hover {
+  background: #2563eb;
+
+  color: white;
+}
+
+button[aria-selected="true"] {
+  background: linear-gradient(90deg, #2563eb, #7c3aed) !important;
+
+  color: white !important;
+}
+
+/* ==========================================
+   DATAFRAME
+========================================== */
+
+[data-testid="stDataFrame"] {
+  border-radius: 18px;
+
+  overflow: hidden;
+
+  border: 1px solid #273449;
+}
+
+/* ==========================================
+   SUCCESS
+========================================== */
+
+.stSuccess {
+  border-radius: 16px;
+}
+
+/* ==========================================
+   INFO
+========================================== */
+
+.stInfo {
+  border-radius: 16px;
+}
+
+/* ==========================================
+   WARNING
+========================================== */
+
+.stWarning {
+  border-radius: 16px;
+}
+
+/* ==========================================
+   ERROR
+========================================== */
+
+.stError {
+  border-radius: 16px;
+}
+
+/* ==========================================
+   INPUT BOX
+========================================== */
+
+.stTextInput input {
+  background: #161d2d;
+
+  color: white;
+
+  border-radius: 12px;
+
+  border: 1px solid #334155;
+}
+
+.stTextInput input:focus {
+  border: 1px solid #3b82f6;
+
+  box-shadow: 0px 0px 15px rgba(59, 130, 246, 0.35);
+}
+
+/* ==========================================
+   SELECT BOX
+========================================== */
+
+.stSelectbox {
+  border-radius: 12px;
+}
+
+/* ==========================================
+   EXPANDER
+========================================== */
+
+.streamlit-expanderHeader {
+  background: #161d2d;
+
+  border-radius: 12px;
+}
+
+/* ==========================================
+   PLOTLY CHART
+========================================== */
+
+.js-plotly-plot {
+  border-radius: 18px;
+
+  overflow: hidden;
+
+  padding: 10px;
+
+  background: #161d2d;
+}
+
+/* ==========================================
+   SCROLLBAR
+========================================== */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #111827;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #475569;
+
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3b82f6;
+}
+
+/* ==========================================
+   HEADINGS
+========================================== */
+
+h1,
+h2,
+h3 {
+  color: white;
+
+  font-weight: 700;
+}
+
+/* ==========================================
+   LINKS
+========================================== */
+
+a {
+  color: #60a5fa;
+
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+}
+
+/* ==========================================
+   HORIZONTAL LINE
+========================================== */
+
+hr {
+  border: 1px solid #273449;
+}
+
+/* ==========================================
+   ANIMATION
+========================================== */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: translateY(0);
+  }
+}
+
+.block-container {
+  animation: fadeIn 0.5s ease;
+}

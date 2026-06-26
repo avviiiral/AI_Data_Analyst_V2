@@ -11,26 +11,37 @@ from core.chart_engine import generate_chart
 from core.insight_engine import generate_insight
 from core.executive_summary import generate_executive_summary
 from core.dashboard_builder import build_dashboard
+from ui.hero import render_hero
+from ui.feature_cards import render_feature_cards
 
-# ==========================================
-# PAGE CONFIG
-# ==========================================
+def load_css():
+    
+    with open("assets/style.css") as f:
+        st.markdown(
+            f"<style>{f.read()}</style>",
+            unsafe_allow_html=True
+        )
 
 st.set_page_config(
     page_title="AI Data Analyst V2",
     layout="wide"
 )
 
-st.title("AI Data Analyst Agent V2")
+load_css()
+from ui.sidebar import render_sidebar
 
+render_sidebar()
+
+render_hero()
+
+render_feature_cards()
 # ==========================================
 # FILE UPLOAD
 # ==========================================
 
-uploaded_file = st.file_uploader(
-    "Upload Dataset",
-    type=["csv", "xlsx", "json"]
-)
+from ui.upload import upload_section
+
+uploaded_file = upload_section()
 
 # ==========================================
 # MAIN APP
